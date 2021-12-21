@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"runtime"
+)
 
 var (
 	v1 string
@@ -29,4 +33,9 @@ func main() {
 	fmt.Println(f)
 
 	fmt.Println(v1, v2, v3, v4, v5, v6, v7) // 初始化为零值
+
+	var goos string = runtime.GOOS
+	fmt.Printf("The opreating system is: %s\n", goos)
+	path := os.Getenv("GOPATH")
+	fmt.Printf("Path is %s\n", path)
 }
