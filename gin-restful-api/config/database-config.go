@@ -12,7 +12,7 @@ import (
 func SetupDatabaseConnection() *gorm.DB {
 	errEnv := godotenv.Load()
 	if errEnv != nil {
-		panic("Failed to laod env file")
+		panic("Failed to load env file")
 	}
 
 	dbHost := os.Getenv("DB_HOST")
