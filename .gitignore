@@ -1,9 +1,3 @@
-*
 .vscode
 .idea
-!.gitignore
-!*/
-!*.go
-!**/*.go
-!go.mod
-!go.sum
+.gitignore
